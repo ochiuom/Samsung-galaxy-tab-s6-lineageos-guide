@@ -1,0 +1,40 @@
+
+
+*******************************************************************************
+Tue May 19 01:15:05 2026
+
+
+FIT:    data read from DATAFILE u 1:2
+        format = x:z
+        x range restricted to [492.000 : 548.000]
+        #datapoints = 15
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = L(x, A1, x0, gam) + c
+	L(x, A, xc, g) = A * g**2 / ((x - xc)**2 + g**2)
+fitted parameters initialized with current variable values
+
+   1 1.6998517597e+03   0.00e+00  5.69e+09    2.300000e+02   5.200000e+02   3.000000e+00   1.200000e+01
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1699.85
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 11
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 12.4311
+variance of residuals (reduced chisquare) = WSSR/ndf   : 154.532
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A1              = 230              +/- 9.692        (4.214%)
+x0              = 520              +/- 0.1494       (0.02873%)
+gam             = 3                +/- 0.2659       (8.864%)
+c               = 12               +/- 5.976        (49.8%)
+
+correlation matrix of the fit parameters:
+                A1     x0     gam    c      
+A1              1.000 
+x0              0.155  1.000 
+gam            -0.132 -0.127  1.000 
+c              -0.433  0.032 -0.660  1.000 
