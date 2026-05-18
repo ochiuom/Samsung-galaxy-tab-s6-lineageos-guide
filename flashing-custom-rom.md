@@ -29,7 +29,7 @@
 2. Locate the `AP_*.tar` file inside the extracted folder.
 3. Copy the `AP` file to the Galaxy Tab S6.
 4. Install the **Magisk APK** on the tablet (device does not need to be rooted for this step).
-5. Open Magisk → **Install → Select and Patch a File** → choose the AP file.
+5. Open Magisk (from Home tab) → **Install → Select and Patch a File** → choose the AP file.
 6. Magisk will create a patched file in the `Downloads` folder (e.g. `magisk_patched_xxxxx.tar`).
 7. Copy the patched AP file back to your Windows PC.
 
