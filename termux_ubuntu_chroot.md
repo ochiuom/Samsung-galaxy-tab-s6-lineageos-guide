@@ -180,6 +180,8 @@ exit   # exit chroot back to Termux
 ```
 
 force-stop it from Android settings, then relaunch — this clears any stale session state before proceeding
+
+
 ---
 
 ## 6. Update Chroot Script for Desktop Launch
