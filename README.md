@@ -1,6 +1,3 @@
-Readme · MD
-Copy
-
 # Samsung Galaxy Tab S6 (SM-T860) — LineageOS + Ubuntu Chroot Guide
  
 Complete guide for Samsung Galaxy Tab S6 Wi-Fi (SM-T860) covering LineageOS 22.2 GSI installation, Magisk root, speaker fix, Adreno driver update, app setup, and running a full Ubuntu 24.04 desktop via Termux chroot.
