@@ -37,7 +37,7 @@ The Tab S6 shipped on Android 12 and Samsung stopped OS updates. This setup give
 
 ## What This Covers
 
-### Part 1 — [Flashing LineageOS & Rooting](./flashing-custom-rom.md)
+### Part 1 — [Flashing LineageOS & Rooting](./1.%20flashing-custom-rom.md)
 
 Starting from stock Android, this guide walks through:
 
@@ -49,7 +49,7 @@ Starting from stock Android, this guide walks through:
 - Updating Adreno GPU drivers via Magisk module
 - Setting up essential apps: F-Droid, Termux, Termux-X11, file managers
 
-### Part 2 — [Termux + Ubuntu 24.04 Chroot](./termux_ubuntu_chroot.md)
+### Part 2 — [Termux + Ubuntu 24.04 Chroot](./2.%20termux_ubuntu_chroot.md)
 
 With the tablet rooted, this guide sets up a full Ubuntu desktop:
 
@@ -61,6 +61,42 @@ With the tablet rooted, this guide sets up a full Ubuntu desktop:
 - Shell theming with Zsh, Oh My Zsh, Powerlevel10k, and fzf/zoxide/eza
 
 ---
+
+### Part 3 — [Ubuntu Scientific Setup](./3.%20Ubuntu%20Scientific%20Setup.md)
+
+With Ubuntu running inside the chroot, this section covers setting up a full scientific computing stack on ARM64:
+
+- Miniforge + Mamba for conda package management
+- SageMath and ROOT (CERN) installed via conda-forge
+- VS Code (ARM64) with Jupyter kernel pointing to `sage-env`
+- Remote display workflow: SSH from NixOS into Termux, render plots in XFCE4 on the tablet screen
+
+---
+
+## Scientific Plots — Running on the Tablet
+
+All plots below were generated natively on the Tab S6 (Snapdragon 855, ARM64) inside the Ubuntu chroot — no x86 machine involved.
+
+### Raman Spectroscopy — gnuplot
+
+Raman spectrum of silicon processed and plotted using gnuplot (`raman_si.gp`) with raw data from `raman_data.dat`:
+
+![Raman SI](plot_files/gnuplot/raman_si-1.png)
+
+### Gaussian Peak Fitting — ROOT (C++)
+
+Gaussian fit to spectral data using a ROOT macro (`FittingDemo.C`) running the CERN ROOT framework via conda-forge:
+
+![Publication Fit](plot_files/root/Publication_Fit-1.png)
+
+### Gaussian Peak Fitting — ROOT (Python)
+
+Same fit reproduced via PyROOT (`FittingDemo.py`) confirming the Python interface works on ARM64:
+
+![Publication Fit Python](plot_files/root/Publication_Fit_Python-1.png)
+
+---
+
 
 ## Downloads Checklist
 
