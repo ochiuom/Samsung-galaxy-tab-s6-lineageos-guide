@@ -92,7 +92,7 @@ In TWRP:
 ### Copy the GSI Image
 
 - On Windows, extract `LineageOS-22.2-20260105-GAPPS-EXT4-GSI.7z` using 7-Zip to get the `.img` file.
-- Copy `LineageOS-22.2-20260105-GAPPS-EXT4-GSI.img` to the tablet's internal storage (via MTP or USB OTG — both work).
+- Copy `LineageOS-22.2-20260105-GAPPS-EXT4-GSI.img` to the tablet's internal storage (via MTP) or USB OTG devices (pendrive for my case) — both work.
 
 ### Flash
 
