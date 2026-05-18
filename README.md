@@ -1,94 +1,54 @@
 # Samsung Galaxy Tab S6 (SM-T860) — LineageOS + Ubuntu Chroot Guide
- 
-Complete guide for Samsung Galaxy Tab S6 Wi-Fi (SM-T860) covering LineageOS 22.2 GSI installation, Magisk root, speaker fix, Adreno driver update, app setup, and running a full Ubuntu 24.04 desktop via Termux chroot.
- 
+
+This repo documents everything needed to turn a stock Samsung Galaxy Tab S6 Wi-Fi (SM-T860) into a fully rooted Linux machine — running LineageOS 22.2 GSI with Magisk root, and a complete Ubuntu 24.04 LTS desktop environment via Termux chroot.
+
 ---
- 
-## Contents
- 
-1. [Requirements](#requirements)
-2. [Firmware & Unlock](#firmware--unlock)
-3. [TWRP Installation](#twrp-installation)
-4. [LineageOS 22.2 GSI](#linageos-222-gsi)
-5. [Magisk Root](#magisk-root)
-6. [Speaker Fix](#speaker-fix)
-7. [Adreno Driver Update](#adreno-driver-update)
-8. [App Setup](#app-setup)
-9. [Termux + Ubuntu 24.04 Chroot](#termux--ubuntu-2404-chroot)
+
+## What This Covers
+
+### Part 1 — [Flashing LineageOS & Rooting](./flashing-custom-rom.md)
+
+Starting from stock Android, this guide walks through:
+
+- Flashing the correct stock firmware via Odin as a clean base
+- Unlocking the bootloader and installing TWRP recovery
+- Flashing LineageOS 22.2 GSI (ARM64 A/B, with GApps)
+- Rooting with Magisk v30.7 and installing BusyBox
+- Fixing the speaker output (broken on most GSIs for this device)
+- Updating Adreno GPU drivers via Magisk module
+- Setting up essential apps: F-Droid, Termux, Termux-X11, file managers
+
+### Part 2 — [Termux + Ubuntu 24.04 Chroot](./termux_ubuntu_chroot.md)
+
+With the tablet rooted, this guide sets up a full Ubuntu desktop:
+
+- Ubuntu 24.04 LTS ARM64 rootfs inside a chroot at `/data/local/chroot/ubuntu`
+- XFCE4 desktop displayed via Termux-X11
+- PulseAudio bridged over TCP for working audio
+- Internal storage (`/sdcard`) and external SD card (`/sdcard_ext`) mounted inside the chroot
+- Media packages: GStreamer, FFmpeg, VLC, MPV, yt-dlp, PipeWire
+- Shell theming with Zsh, Oh My Zsh, Powerlevel10k, and fzf/zoxide/eza
+
 ---
- 
-## Requirements
- 
-- Samsung Galaxy Tab S6 SM-T860 (Wi-Fi model)
-- Windows PC for Odin flashing
-- USB cable
-- Unlocked bootloader
-- [Odin](https://odindownload.com/)
-- [TWRP for Tab S6](https://twrp.me/samsung/samsunggalaxytabs6wifi.html)
-- [LineageOS 22.2 GSI (ARM64 A/B)](https://github.com/phhusson/treble_experimentations/releases)
-- [Magisk APK](https://github.com/topjohnwu/Magisk/releases)
-- [BuiltIn-BusyBox Magisk module](https://github.com/Magisk-Modules-Alt-Repo/BuiltIn-BusyBox/releases)
+
+## Downloads Checklist
+
+| # | File | Source |
+|---|------|--------|
+| 1 | `LineageOS-22.2-20260105-GAPPS-EXT4-GSI.7z` | [MisterZtr LineageOS GSI Releases](https://github.com/MisterZtr/LineageOS_gsi/releases) |
+| 2 | Stock firmware for your region (e.g. `T860XXU5DXJ1` BTU/UK) | [samfw.com](https://samfw.com/firmware/SM-T860/BTU) |
+| 3 | `twrp-3.7.0_9-0-gts6lwifi.img` + `.img.tar` | [dl.twrp.me/gts6lwifi](https://dl.twrp.me/gts6lwifi/) |
+| 4 | Magisk APK v30.7 | [topjohnwu/Magisk releases](https://github.com/topjohnwu/Magisk/releases/tag/v30.7) |
+| 5 | Odin3 v3.14.1 (patched) | [XDA thread](https://xdaforums.com/t/patched-odin-3-13-1.3762572/) |
+| 6 | Android Platform Tools (Windows) | [developer.android.com](https://developer.android.com/tools/releases/platform-tools) |
+| 7 | BuiltIn-BusyBox Magisk module | [Magisk-Modules-Alt-Repo](https://github.com/Magisk-Modules-Alt-Repo/BuiltIn-BusyBox/releases) |
+| 8 | Speaker fix Magisk module | [XDA thread](https://xdaforums.com/t/gsi-4-speaker-fix-for-galaxy-tab-s6.4780990/) |
+| 9 | Adreno driver Magisk module | [XDA thread](https://xdaforums.com/t/adreno-driver-update-magisk-module-for-tab-s6.4767424/) |
+| 10 | Termux-X11 nightly APK | [github.com/termux/termux-x11](https://github.com/termux/termux-x11/releases) |
+
 ---
- 
-## Firmware & Unlock
- 
-1. Flash the latest stock firmware for SM-T860 via Odin to ensure a clean base.
-2. Enable **Developer Options** → **OEM Unlocking**.
-3. Boot into Download Mode (`Vol Down + Vol Up` while connecting USB) and perform a long press to unlock the bootloader.
-> **Warning:** Bootloader unlock wipes the device.
- 
----
- 
-## TWRP Installation
- 
-1. Download the TWRP image for SM-T860.
-2. Boot into Download Mode and flash via Odin (`AP` slot).
-3. Reboot into recovery.
----
- 
-## LineageOS 22.2 GSI
- 
-1. In TWRP, wipe **System**, **Data**, **Cache**, **Dalvik**.
-2. Flash the LineageOS 22.2 ARM64 A/B GSI zip.
-3. Flash the appropriate GApps package if needed.
-4. Reboot system.
----
- 
-## Magisk Root
- 
-1. Copy the `boot.img` from the GSI package to the device.
-2. Install **Magisk APK**, patch the boot image from within the app.
-3. Flash the patched boot image via Odin (`AP` slot) in Download Mode.
-4. After boot, open Magisk and confirm root status.
-5. Install the **BuiltIn-BusyBox** module from Magisk → Modules.
----
- 
-## Speaker Fix
- 
-> LineageOS GSIs may ship with broken or low-volume speaker output on the Tab S6.
- 
-Install the speaker fix Magisk module appropriate for SM-T860 and reboot.
- 
----
- 
-## Adreno Driver Update
- 
-1. Download updated Adreno drivers compatible with the SM-T860 GPU.
-2. Flash via Magisk module or apply through the **Adreno Tools** app.
-3. Reboot and verify via a GPU benchmark or `glxinfo`-equivalent.
----
- 
-## App Setup
- 
-Recommended baseline:
- 
-- **F-Droid** — open source app repository
-- **Termux** (from F-Droid) — terminal emulator, required for chroot
-- **Termux-X11** (nightly APK) — X11 display server for desktop GUI
-- **X-plore** — file manager (useful for identifying SD card labels)
-- **MiXplorer** — alternative file manager with root support
----
- 
-## Termux + Ubuntu 24.04 Chroot
- 
-Runs a full Ubuntu 24.04 LTS desktop (XFCE4) inside a chroot on the rooted tablet, displayed via Termux-X11.
+
+## Device
+
+**Samsung Galaxy Tab S6 SM-T860** (Wi-Fi only)  
+SoC: Snapdragon 855 · GPU: Adreno 640 · RAM: 6/8 GB · Android base: rooted LineageOS 22.2 GSI
