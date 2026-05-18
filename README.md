@@ -1,7 +1,38 @@
 # Samsung Galaxy Tab S6 (SM-T860) — LineageOS + Ubuntu Chroot Guide
-
+ 
 This repo documents everything needed to turn a stock Samsung Galaxy Tab S6 Wi-Fi (SM-T860) into a fully rooted Linux machine — running LineageOS 22.2 GSI with Magisk root, and a complete Ubuntu 24.04 LTS desktop environment via Termux chroot.
-
+ 
+---
+ 
+## Why Bother — Benefits vs Stock Android
+ 
+The Tab S6 shipped on Android 12 and Samsung stopped OS updates. This setup gives it a second life with real benefits:
+ 
+**OS and software**
+- LineageOS 22.2 is based on Android 15/16 — three to four major versions ahead of what Samsung shipped
+- Pure AOSP experience, no One UI coating, no Samsung or Google bloatware pre-installed
+- Apps that Samsung marked as uninstallable are simply not there to begin with
+**Privacy and security**
+- [AdAway](https://adaway.org/) blocks ads at the hosts file level system-wide — every app, every browser, no exceptions
+- On a non-rooted device you have to choose between AdAway (uses VPN slot) or ProtonVPN — you can't run both. With root you run AdAway at the system level and ProtonVPN simultaneously for tighter security
+- No background telemetry from Samsung, Google Play Services is minimal or removable, no vendor analytics
+**Ad-free apps**
+- With root you can patch YouTube, Spotify, YouTube Music and similar apps to strip ads entirely — no subscription needed
+**Battery and performance**
+- No background processes from Samsung, no persistent Google services, no bloatware keeping the SoC awake
+- Noticeably better idle battery life and thermal behaviour compared to stock
+- Snapdragon 855 is still a capable chip — it was being wasted on a dead OS
+**Linux on real hardware**
+- The Ubuntu chroot runs directly on the ARM64 hardware via a chroot, not inside a VM or container
+- Android and Ubuntu run in parallel on the same kernel — you switch between them without rebooting
+- This is closer to a dual-OS setup than anything you can do on stock Android
+- Full access to apt, Python, compilers, CLI tools, desktop apps via XFCE4 — a proper Linux environment on a tablet
+**Tradeoffs**
+- Bootloader unlock trips Knox — Samsung Pay and some banking apps will not work
+- SafetyNet/Play Integrity requires extra Magisk modules (e.g. Shamiko) to pass — some apps detect root
+- GSIs are not device-specific builds; minor quirks are possible (camera HAL, sensors)
+- You own the update process — no OTA, manual flashing required for future LineageOS builds
+  
 ---
 
 ## What This Covers
