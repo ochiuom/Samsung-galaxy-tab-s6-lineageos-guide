@@ -112,9 +112,10 @@ In TWRP:
 
 1. Boot back into TWRP: hold **Power + Volume Up** during reboot.
 2. Rename `Magisk-v30.7.apk` → `Magisk-v30.7.zip` (on Windows).
-3. In TWRP: **Install → select the zip → swipe to confirm**.
-4. Reboot to System.
-5. Open the **Magisk app** — if it shows no pending updates or re-installs, root is fully working.
+3. copy the zip file either in tablet or pendrive.
+4. In TWRP: **Install → select the zip → swipe to confirm**.
+5. Reboot to System.
+6. Open the **Magisk app** — if it shows no pending updates or re-installs, root is fully working.
 
 ---
 
@@ -122,7 +123,7 @@ In TWRP:
 
 ### Fix Low Brightness
 
-1. Install the **Treble app** (available on F-Droid / Play Store).
+1. **The Treble app comes pre-installed with the OS.**
 2. Open it → **Samsung Settings → Enable Extend Brightness Range**.
 
 ### Fix All 4 Speakers
