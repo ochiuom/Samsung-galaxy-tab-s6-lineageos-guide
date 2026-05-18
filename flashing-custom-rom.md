@@ -180,3 +180,29 @@ sudo mkfs.vfat -F 32 /dev/sdX1
 - Tested on SM-T860 (Wi-Fi), firmware `T860XXU5DXJ1` (BTU/UK region).
 - GSI build `LineageOS-22.2-20260105-GAPPS-EXT4-GSI` was stable at time of flashing; newer builds may be buggy — check the release thread.
 - Last official Samsung security patch on this device: **August 2023**.
+
+---
+
+## ⚠️ Odin Flash Failure Recovery
+
+If Odin fails mid-flash (stuck or error screen in Download Mode), don't panic.
+
+Open Odin → **Reset**, then reload:
+- **BL** → stock BL from firmware folder
+- **AP** → stock AP (not Magisk-patched)
+- **CSC Home** → use `HOME_CSC` this time (not `CSC`)
+
+Flash it. This restores the stock Samsung OS.
+
+Once booted back into Samsung UI, redo the setup:
+1. Enable **Developer Options**
+2. Enable **OEM Unlocking**
+3. Reboot → unlock bootloader
+4. Reboot back to Samsung system
+5. Reboot to Download Mode and start the guide from the beginning
+
+**Root cause in my case**: I was using a USB-C to USB-C cable (Samsung S21 Ultra cable) — it stalled halfway through. Switching to a **USB-A to USB-C** cable fixed it immediately.
+
+**Rule of thumb**: if you're ever stuck, flash stock firmware and you're back to a clean slate.
+
+---
