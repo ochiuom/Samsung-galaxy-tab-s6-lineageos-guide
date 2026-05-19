@@ -203,8 +203,8 @@ end
 
 pub_ax(ax1);
 set(ax1, 'XTickLabel', {});
-xlim([30 1800]); ylim([0 ymax_main]);
-xticks(30:170:1800);
+xlim([30 1700]); ylim([0 ymax_main]);
+xticks(30:200:1700);
 ylabel('Intensity (arb. units)', 'FontSize', 9, 'FontName', 'Helvetica');
 set(get(gca, 'YLabel'), 'Units', 'normalized', 'Position', [-0.08, 0.5, 0]);
 title('(b)  Raman spectrum  |  Multi-Lorentzian fit', ...
@@ -231,8 +231,8 @@ plot(x, residual, 'o', 'MarkerSize', 1.6, 'MarkerEdgeColor', c_res, ...
 plot([30 1800], [0 0], '-', 'Color', [0.3 0.3 0.3], 'LineWidth', 1.0, ...
      'HandleVisibility', 'off');
 pub_ax(ax2);
-xlim([30 1800]);
-xticks(30:170:1800);
+xlim([30 1700]);
+xticks(30:200:1700);
 rlim = max(abs(residual(fit_mask))) * 1.4;
 ylim([-rlim rlim]);
 xlabel('Raman Shift (cm^{-1})', 'FontSize', 13, 'FontName', 'Helvetica');
