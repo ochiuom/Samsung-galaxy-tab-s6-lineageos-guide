@@ -195,10 +195,12 @@ end
 
 pub_ax(ax1);
 set(ax1, 'XTickLabel', {});
-xlim([40 1800]); ylim([0 ymax_main]);
-ylabel('Intensity (arb. units)', 'FontSize', 13, 'FontName', 'Helvetica');
-title('(b)  Raman spectrum — Bulk, 300 K  |  Multi-Lorentzian fit', ...
-      'FontSize', 12, 'FontName', 'Helvetica', 'FontWeight', 'normal');
+xlim([30 1800]); ylim([0 ymax_main]);
+xticks(30:170:1800);
+ylabel('Intensity (arb. units)', 'FontSize', 9, 'FontName', 'Helvetica');
+set(get(gca, 'YLabel'), 'Units', 'normalized', 'Position', [-0.08, 0.5, 0]);
+title('(b)  Raman spectrum  |  Multi-Lorentzian fit', ...
+      'FontSize', 9, 'FontName', 'Helvetica', 'FontWeight', 'normal');
 %legend('Location', 'southeast', 'FontSize', 11, 'Box', 'off');
 %legend('Position', [0.65 0.40 0.15 0.08], 'FontSize', 11, 'Box', 'off');
 
@@ -218,10 +220,11 @@ ax2 = axes('Position', [0.11 0.07 0.86 0.13]);
 hold on;
 plot(x, residual, 'o', 'MarkerSize', 1.6, 'MarkerEdgeColor', c_res, ...
      'MarkerFaceColor', c_res + 0.5*(1-c_res), 'HandleVisibility', 'off');
-plot([40 1800], [0 0], '-', 'Color', [0.3 0.3 0.3], 'LineWidth', 1.0, ...
+plot([30 1800], [0 0], '-', 'Color', [0.3 0.3 0.3], 'LineWidth', 1.0, ...
      'HandleVisibility', 'off');
 pub_ax(ax2);
-xlim([40 1800]);
+xlim([30 1800]);
+xticks(30:170:1800);
 rlim = max(abs(residual(fit_mask))) * 1.4;
 ylim([-rlim rlim]);
 xlabel('Raman Shift (cm^{-1})', 'FontSize', 13, 'FontName', 'Helvetica');
