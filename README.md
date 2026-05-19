@@ -88,7 +88,7 @@ All plots below were generated natively on the Tab S6 (Snapdragon 855, ARM64) in
 
 Raman spectrum of silicon processed and plotted using gnuplot (`raman_si.gp`) with raw data from `raman_data.dat`:
 
-![Raman SI](plot_files/gnuplot/raman_si-1.png)
+![Raman SI](plot_files/gnuplot/Raman-peak-demo/raman_si-1.png)
 
 ### Gaussian Peak Fitting — ROOT (C++)
 
