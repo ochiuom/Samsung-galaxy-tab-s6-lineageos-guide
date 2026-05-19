@@ -1,0 +1,65 @@
+sw_volume: 90
+audio_device_state:1:ALSA/Pulseaudio
+audio_device_state:1:toggle_visualizer
+audio_device_state:1:My HTTP Stream
+state: play
+current: 7
+time: 120.091000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:music-E/English_02/Hideaway.mp3
+1:music-A/Songs_Mp3_Assam/Meghar Jolonga.mp3
+2:music-H/Albums/Aise Na Mujhe Tum Dekho.mp3
+3:music-B/Bengali_01/Anutap/Dusmanta-Raja-Jodi-Hotam-Ami.mp3
+4:music-B/Slow-Bengali_good2020/Shisire Shisire Sharodo Akashe Bhorer Agomoni .... 2016 (128 kbps).mp3
+5:music-B/Slow-Bengali_good2020/Aamar Shadh Na Mitilo By Anuradha Paudwal Shyama Sangeet Bengali [Full Song] I Maago Anandomoyee (128 kbps).mp3
+6:music-B/Slow-Bengali_good2020/Amay Aktu Jayga Dao (128 kbps).mp3
+7:music-B/Slow-Bengali_good2020/Amay Aktu Jayga Dao (128 kbps).mp3
+8:music-B/Slow-Bengali_good2020/Amay Aktu Jayga Dao (128 kbps).mp3
+9:music-B/Slow-Bengali_good2020/Ekbar Krishno bole bahu tule nachore mon pothe pothe (128 kbps).mp3
+10:music-B/Slow-Bengali_good2020/Aay Khuku Aay (Kate Na Samoy) with lyric আয় খুকু আয় Hemanta Mukherjee Sravanti Mazumder (128 kbps).mp3
+11:music-B/Slow-Bengali_good2020/Bajlo tomar alor benu By DEBOLINA SM studio DURGA DURGATINASHINI - Mahalaya (128 kbps).mp3
+12:music-B/Bengali_01/Mita Chatterjee/Mita Chaterjee 1/Aainate Mukh Dekhbo Na.mp3
+13:music-B/Bengali_01/Mita Chatterjee/Mita Chaterjee 1/AALO AAR AALO DIYE.mp3
+14:music-B/Bengali_01/Kumar Sanu/126. Hokna Biroher Pore.mp3
+15:music-B/Bengali_01/Kumar Sanu/114. Tumi Dekhona.mp3
+16:music-B/Bengali_01/Kumar Sanu/116. Tumi Janona Naki Bojhona.mp3
+17:music-B/Bengali_01/Kumar Sanu/130. Tomer Ei Bhalobasha.mp3
+18:music-H/Old Shorted-01/01 WADA NA TOD.mp3
+19:music-H/Old Shorted-01/34 JANE KYON LOG.mp3
+20:music-H/Old Shorted-01/66 BINDIYA CHAMKEGI.mp3
+21:music-H/Old Shorted-01/69 BANGLE KE PEECHE.mp3
+22:music-H/Old Shorted-01/A_JaneKaiseKabKahan.mp3
+23:music-H/Old Shorted-01/A_MeriSoniMeriTamanna.mp3
+24:music-H/Old Shorted-01/Disco Station Disco.mp3
+25:music-H/Old Shorted-01/Ek Main Ek Tu Khel Khel Mein.MP3
+26:music-H/Old Shorted-01/HKK-Milgaya hum ko saathi.mp3
+27:music-H/Old Shorted-01/Jaan-E-Jaan.mp3
+28:music-H/Old Shorted-01/khulam_khulam_pyar___Incomplete_Tag.mp3
+29:music-H/Old Shorted-01/PyarKabhiKamNahinKarna-A.mp3
+30:music-H/Old Shorted-01/Wo Bite Din.mp3
+31:music-H/Old Shorted-01/14 AYE HAWA MERE SANG SANG CHAL.mp3
+32:music-H/Old Shorted-01/64. Aan Milo Sajana - Achha To Hum Chalte Hain.mp3
+33:music-H/Old Shorted-01/XAPK-Jai_jai_Shiv_Shankar.mp3
+34:music-H/Old Shorted-01/Aagar Tum Na Hote.mp3
+35:music-H/Old Shorted-01/40. Ajanabee - Hum Dono Do Premee.mp3
+36:music-H/Old Shorted-01/ZINDAGI EK SAFAR HAI SUHANA.mp3
+37:music-H/Old Shorted-01/45 AAP KI NAZARON NE SAMJHA.mp3
+38:music-H/Old Shorted-01/ChandaHaiTu.mp3
+39:music-H/Old Shorted-01/Kora kagaz tha.mp3
+40:music-H/Old Shorted-01/03 Pardesh Jake Pardesiya.mp3
+41:music-H/Old Shorted-01/Dikhai Diye Yun - Lata .mp3
+42:music-H/Old Shorted-01/DIL KE JHAROKHE MEIN.mp3
+43:music-H/Old Shorted-01/CHADTI JAWANI MERI CHAAL.MP3
+44:music-H/Old Shorted-01/113 CHAINA TAWON = BAR BAR DEKHO.mp3
+45:music-H/Old Shorted-01/Ajeeb Dastan.mp3
+46:music-H/Old Shorted-01/Aaja tujhko pukare mere geet re.mp3
+47:music-H/Old Shorted-01/46. Ghar - Aap Ki Aankhon Mein.mp3
+48:music-H/Sort_2019/Humnava.mp3
+playlist_end

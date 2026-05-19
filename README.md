@@ -105,6 +105,16 @@ Same fit reproduced via PyROOT (`FittingDemo.py`) confirming the Python interfac
 ---
 
 
+### Raman Peak Fitting — Octave
+
+Octave runs natively on ARM64 — no emulation needed. Complex Raman spectrum
+fitted with 11 peaks, with background automatically evaluated and subtracted,
+using `raman_fit.m`:
+
+![Octave Raman Fit](plot_files/octave/fig2_fit-1.png)
+
+---
+
 ## Downloads Checklist
 
 | # | File | Source |

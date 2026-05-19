@@ -1,0 +1,16 @@
+>>> [gnuplot] Research Suite Loaded
+
+===========================================
+  Cavendish Pendulum -- Fit Results
+===========================================
+  A      =  44.547 +/- 2.127  mrad
+  tau    =  57.527 +/- 8.121  s
+  T      = 13.1028 +/- 0.0647  s
+  phi    = -0.3772 +/- 0.0423  rad
+  theta0 =   2.456 +/- 0.608  mrad
+  chi2/ndf = 1.1471
+  R2       = 0.961729
+===========================================
+
+>>> Saved: cavendish_fit.dat
+>>> Saved: cavendish.pdf

@@ -1,0 +1,234 @@
+
+
+*******************************************************************************
+Tue May 19 10:03:26 2026
+
+
+FIT:    data read from DATAFILE u 1:2:3 yerrors
+        format = x:z:s
+        #datapoints = 39
+function used for fitting: theta(x)
+	theta(t) = theta0 + a * exp(-t/tau) * sin(2*pi*t/T + phi)
+fitted parameters initialized with current variable values
+
+  28 3.9000774059e+01  -1.28e-03  4.85e+05    4.454702e+01   5.752688e+01  -3.771820e-01   1.310277e+01   2.456404e+00
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 39.0008
+rel. change during last iteration : -1.27531e-15
+
+degrees of freedom    (FIT_NDF)                        : 34
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.07102
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.14708
+p-value of the Chisq distribution (FIT_P)              : 0.254938
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 44.547           +/- 2.127        (4.776%)
+tau             = 57.5269          +/- 8.121        (14.12%)
+phi             = -0.377182        +/- 0.04234      (11.23%)
+T               = 13.1028          +/- 0.06466      (0.4935%)
+theta0          = 2.4564           +/- 0.6081       (24.76%)
+
+correlation matrix of the fit parameters:
+                a      tau    phi    T      theta0 
+a               1.000 
+tau            -0.844  1.000 
+phi            -0.100  0.088  1.000 
+T              -0.072  0.072  0.806  1.000 
+theta0         -0.166  0.127 -0.182 -0.166  1.000 
+
+
+*******************************************************************************
+Tue May 19 10:03:49 2026
+
+
+FIT:    data read from DATAFILE u 1:2:3 yerrors
+        format = x:z:s
+        #datapoints = 39
+function used for fitting: theta(x)
+	theta(t) = theta0 + a * exp(-t/tau) * sin(2*pi*t/T + phi)
+fitted parameters initialized with current variable values
+
+  28 3.9000774059e+01  -1.28e-03  4.85e+05    4.454702e+01   5.752688e+01  -3.771820e-01   1.310277e+01   2.456404e+00
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 39.0008
+rel. change during last iteration : -1.27531e-15
+
+degrees of freedom    (FIT_NDF)                        : 34
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.07102
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.14708
+p-value of the Chisq distribution (FIT_P)              : 0.254938
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 44.547           +/- 2.127        (4.776%)
+tau             = 57.5269          +/- 8.121        (14.12%)
+phi             = -0.377182        +/- 0.04234      (11.23%)
+T               = 13.1028          +/- 0.06466      (0.4935%)
+theta0          = 2.4564           +/- 0.6081       (24.76%)
+
+correlation matrix of the fit parameters:
+                a      tau    phi    T      theta0 
+a               1.000 
+tau            -0.844  1.000 
+phi            -0.100  0.088  1.000 
+T              -0.072  0.072  0.806  1.000 
+theta0         -0.166  0.127 -0.182 -0.166  1.000 
+
+
+*******************************************************************************
+Tue May 19 10:04:17 2026
+
+
+FIT:    data read from DATAFILE u 1:2:3 yerrors
+        format = x:z:s
+        #datapoints = 39
+function used for fitting: theta(x)
+	theta(t) = theta0 + a * exp(-t/tau) * sin(2*pi*t/T + phi)
+fitted parameters initialized with current variable values
+
+  28 3.9000774059e+01  -1.28e-03  4.85e+05    4.454702e+01   5.752688e+01  -3.771820e-01   1.310277e+01   2.456404e+00
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 39.0008
+rel. change during last iteration : -1.27531e-15
+
+degrees of freedom    (FIT_NDF)                        : 34
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.07102
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.14708
+p-value of the Chisq distribution (FIT_P)              : 0.254938
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 44.547           +/- 2.127        (4.776%)
+tau             = 57.5269          +/- 8.121        (14.12%)
+phi             = -0.377182        +/- 0.04234      (11.23%)
+T               = 13.1028          +/- 0.06466      (0.4935%)
+theta0          = 2.4564           +/- 0.6081       (24.76%)
+
+correlation matrix of the fit parameters:
+                a      tau    phi    T      theta0 
+a               1.000 
+tau            -0.844  1.000 
+phi            -0.100  0.088  1.000 
+T              -0.072  0.072  0.806  1.000 
+theta0         -0.166  0.127 -0.182 -0.166  1.000 
+
+
+*******************************************************************************
+Tue May 19 10:05:20 2026
+
+
+FIT:    data read from DATAFILE u 1:2:3 yerrors
+        format = x:z:s
+        #datapoints = 39
+function used for fitting: theta(x)
+	theta(t) = theta0 + a * exp(-t/tau) * sin(2*pi*t/T + phi)
+fitted parameters initialized with current variable values
+
+  28 3.9000774059e+01  -1.28e-03  4.85e+05    4.454702e+01   5.752688e+01  -3.771820e-01   1.310277e+01   2.456404e+00
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 39.0008
+rel. change during last iteration : -1.27531e-15
+
+degrees of freedom    (FIT_NDF)                        : 34
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.07102
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.14708
+p-value of the Chisq distribution (FIT_P)              : 0.254938
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 44.547           +/- 2.127        (4.776%)
+tau             = 57.5269          +/- 8.121        (14.12%)
+phi             = -0.377182        +/- 0.04234      (11.23%)
+T               = 13.1028          +/- 0.06466      (0.4935%)
+theta0          = 2.4564           +/- 0.6081       (24.76%)
+
+correlation matrix of the fit parameters:
+                a      tau    phi    T      theta0 
+a               1.000 
+tau            -0.844  1.000 
+phi            -0.100  0.088  1.000 
+T              -0.072  0.072  0.806  1.000 
+theta0         -0.166  0.127 -0.182 -0.166  1.000 
+
+
+*******************************************************************************
+Tue May 19 10:05:47 2026
+
+
+FIT:    data read from DATAFILE u 1:2:3 yerrors
+        format = x:z:s
+        #datapoints = 39
+function used for fitting: theta(x)
+	theta(t) = theta0 + a * exp(-t/tau) * sin(2*pi*t/T + phi)
+fitted parameters initialized with current variable values
+
+  28 3.9000774059e+01  -1.28e-03  4.85e+05    4.454702e+01   5.752688e+01  -3.771820e-01   1.310277e+01   2.456404e+00
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 39.0008
+rel. change during last iteration : -1.27531e-15
+
+degrees of freedom    (FIT_NDF)                        : 34
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.07102
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.14708
+p-value of the Chisq distribution (FIT_P)              : 0.254938
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 44.547           +/- 2.127        (4.776%)
+tau             = 57.5269          +/- 8.121        (14.12%)
+phi             = -0.377182        +/- 0.04234      (11.23%)
+T               = 13.1028          +/- 0.06466      (0.4935%)
+theta0          = 2.4564           +/- 0.6081       (24.76%)
+
+correlation matrix of the fit parameters:
+                a      tau    phi    T      theta0 
+a               1.000 
+tau            -0.844  1.000 
+phi            -0.100  0.088  1.000 
+T              -0.072  0.072  0.806  1.000 
+theta0         -0.166  0.127 -0.182 -0.166  1.000 
+
+
+*******************************************************************************
+Tue May 19 10:16:23 2026
+
+
+FIT:    data read from DATAFILE u 1:2:3 yerrors
+        format = x:z:s
+        #datapoints = 39
+function used for fitting: theta(x)
+	theta(t) = theta0 + a * exp(-t/tau) * sin(2*pi*t/T + phi)
+fitted parameters initialized with current variable values
+
+  28 3.9000774059e+01  -1.28e-03  4.85e+05    4.454702e+01   5.752688e+01  -3.771820e-01   1.310277e+01   2.456404e+00
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 39.0008
+rel. change during last iteration : -1.27531e-15
+
+degrees of freedom    (FIT_NDF)                        : 34
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.07102
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.14708
+p-value of the Chisq distribution (FIT_P)              : 0.254938
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 44.547           +/- 2.127        (4.776%)
+tau             = 57.5269          +/- 8.121        (14.12%)
+phi             = -0.377182        +/- 0.04234      (11.23%)
+T               = 13.1028          +/- 0.06466      (0.4935%)
+theta0          = 2.4564           +/- 0.6081       (24.76%)
+
+correlation matrix of the fit parameters:
+                a      tau    phi    T      theta0 
+a               1.000 
+tau            -0.844  1.000 
+phi            -0.100  0.088  1.000 
+T              -0.072  0.072  0.806  1.000 
+theta0         -0.166  0.127 -0.182 -0.166  1.000 
