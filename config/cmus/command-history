@@ -1,0 +1,14 @@
+N_eff choose 2 (for pairwise sums): 105
+add /home/achintya/Music/
+q
+colorscheme rose-pine
+colorscheme pantheon-terminal-default
+colorscheme pantheon-terminal-solarized-light
+colorscheme pantheon-terminal-solarized-dark
+colorscheme gruvbox-dark
+colorscheme rose-pine-legacy
+theme 
+add /run/media/achintya/disk/Music
+a
+add /media
+/run/media/achintya/disk
