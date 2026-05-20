@@ -18,8 +18,6 @@ The Tab S6 shipped on Android 12 and Samsung stopped OS updates. This setup give
 - On a non-rooted device you have to choose between AdAway (uses VPN slot) or ProtonVPN — you can't run both. With root you run AdAway at the system level and ProtonVPN simultaneously for tighter security
 - No background telemetry from Samsung, Google Play Services is minimal or removable, no vendor analytics
 
-**Ad-free apps**
-- With root you can patch YouTube, Spotify, YouTube Music and similar apps to strip ads entirely — no subscription needed
 
 **Battery and performance**
 - No background processes from Samsung, no persistent Google services, no bloatware keeping the SoC awake
